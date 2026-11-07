@@ -402,7 +402,7 @@ class Alert:
 
     def text(self, now: Optional[float] = None) -> str:
         if self.kind == "resolved":
-            return f"✅ RESOLVED · {self.question} → {self.detail}\n   {self.url}"
+            return f"✔ RESOLVED · {self.question} → {self.detail}\n   {self.url}"
         delta = (self.new - self.old) * 100 if self.new is not None and self.old is not None else 0.0
         arrow = "▲" if delta >= 0 else "▼"
         head = {"move": f"{arrow} {delta:+.1f} pts",
