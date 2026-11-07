@@ -1,0 +1,17 @@
+name: oddsradar
+version: 0.1.0
+manifest_version: 2
+api_version: 1
+description: "Polymarket odds in Hermes: search markets, live odds with 24h/7d moves and a sparkline, a persistent watchlist with move and threshold rules, and alerts that run as a no-agent cron job (zero tokens per check). Read-only: no keys, no wallet, no trading."
+author: WV629
+license: MIT
+homepage: https://github.com/WV629/hermes-oddsradar
+tags: [polymarket, prediction-markets, alerts, cron, finance]
+requires_hermes: ">=0.22.0"
+provides_tools:
+  - odds_search
+  - odds_market
+  - odds_watch
+  - odds_check
+  - odds_movers
+provides_hooks: []
