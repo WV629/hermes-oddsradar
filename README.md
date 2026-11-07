@@ -17,10 +17,14 @@ Another Fed rate hike in 2026?
   https://polymarket.com/event/another-fed-rate-hike-in-2026
 ```
 
+A real alert, delivered by a no-agent cron tick during a live Dota 2 match:
+
 ```
-▲ +6.1 pts · Another Fed rate hike in 2026?
-   75.5% → 81.6% in 3h · https://polymarket.com/event/another-fed-rate-hike-in-2026
+▼ -18.0 pts · Dota 2: potn9ki vs Team Synapse - Game 1 Winner [potn9ki]
+   37.5% → 19.5% in 69s · https://polymarket.com/event/dota2-p-synaps-2026-11-07/dota2-p-synaps-2026-11-07-game1
 ```
+
+![Odds Radar](docs/banner.png)
 
 Read-only by design: no API key, no wallet, no trading.
 
@@ -100,6 +104,12 @@ Telegram home channel. No model is involved at any point.
 Multi-market events (e.g. a nominee race) list their market slugs so you can
 pick one.
 
+## Screenshots
+
+| Live odds | Watchlist | A zero-token alert |
+|---|---|---|
+| ![show](docs/show.png) | ![watch](docs/watch.png) | ![alert](docs/alert.png) |
+
 ## Agent tools
 
 | Tool | What it does |
@@ -132,7 +142,7 @@ All handlers return JSON and never raise.
 ## Development
 
 ```bash
-python -m pytest -q tests                 # 24 offline tests, fake transport, no network
+python -m pytest -q tests                 # 25 offline tests, fake transport, no network
 hermes plugins validate . --install-deps  # catalog admission check
 hermes plugins doctor . --ci
 ```
